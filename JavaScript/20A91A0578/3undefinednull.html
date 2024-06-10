@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undefined | Null</title>
+</head>
+<body>
+    <script>
+        function undefinenull(n)
+        {
+            if(typeof(n)=='undefined')
+            document.write('Undefined Type'+"<br>");
+            else if(n==null)
+            document.write("Null Type"+"<br>")
+            else
+            document.write("Variable belongs to "+typeof(n)+"<br>");
+        }
+        var x;
+        var y=null;
+        undefinenull(x);
+        undefinenull(y);
+        undefinenull(8);
+        undefinenull("hgy");
+    </script>
+</body>
+</html>

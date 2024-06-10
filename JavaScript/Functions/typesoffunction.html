@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of functions</title>
+</head>
+<body>
+
+    <script>
+//if parameters are not passed properly functions returns NaN value
+// defualt parametes are used to avoid errors
+    // Types of Functions
+    //     1.Normal Function
+    function sum(a,b){
+return a*b+"<br>";
+    }
+    //     2.Anonymus Function
+    mul=function(n,m)
+    {
+        return (n+m)+"<br>";
+    }
+    //     3.IIFE
+    var suim=(function add(h,j){
+        return (h*j)+"<br>";
+    }(88,895))
+    //     4.Arrow Function
+awe=(p,q) =>{
+    return p+q;
+}
+awww=(r)=>{
+  document.write("<br>"+"roll :"+r+"<br>");
+}
+asw=()=>document.write("Logged Successfully"+"<br>");
+aqw=_=>document.write("Enjoy the Day");
+
+    document.write("Normal functions  :"+sum(6,8));
+    document.write("Anonymus Function  :"+mul(8,95));
+    document.write("IIFE function  :"+suim);
+    document.write("Arrow Function :"+awe(23456,886758));
+    awww(455);
+    asw();
+    aqw();
+    </script>
+</body>
+</html>

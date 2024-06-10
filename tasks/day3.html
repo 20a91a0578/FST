@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4 id="id1">We are Adding Text: </h4>
+   
+    <h4 class="cl">HELLOOOO</h4>
+    
+    <h4 class="cl">WELCOME</h4>
+    
+    <h3>hhhhhh</h3>
+    <h3>hellllllll..</h3>
+    <input type="button" value="CLick" onclick="fun()">
+    <script>
+        
+        function fun()
+        {
+            document.getElementById("id1").innerHTML="WE CHANGED THE CONTENT USING getElementById";
+            var a=document.getElementsByClassName("cl");
+            a[0].innerHTML="WE CHANGED THE CONTENT USING getElementsByClassName";
+            a[1].innerHTML="WE CHANGED THE CONTENT and colour USING getElementsByClassName";
+            a[1].style.color="RED";
+            var b=document.getElementsByTagName("h3");
+            b[0].innerHTML="WE CHANGED THE CONTENT USING getElementsByTagName";
+            b[1].innerHTML="WE CHANGED THE CONTENT and colour USING getElementsByTagName";
+            b[1].style.color="green";
+        }
+    </script>
+</body>
+</html>

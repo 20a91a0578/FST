@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<body>
+    <table border="1" id="we3">
+        <thead id="th1">
+            <th>Id</th>
+            <th>Name</th>
+            <th>College</th>
+            <th>Branch</th>
+        </thead>
+    </table>
+    <script>
+         let traines=[
+            {
+                "id":1234,
+                "name":"prasad",
+                "college":"Aec",
+                "branch":"CSE"
+            },
+            {
+                "id":1235,
+                "name":"rajesh",
+                "college":"Acet",
+                "branch":"it"
+            },
+            {
+                "id":1238,
+                "name":"satya",
+                "college":"Aec",
+                "branch":"CSE"
+            }
+        ]
+        var x = document.createElement("TBODY");
+        for(i=0;i<traines.length;i++)
+        {
+        var y = document.createElement("TR");
+        var z1 = document.createElement("TD");
+        var z2=document.createElement("TD");
+        var z3=document.createElement("TD");
+        var z4=document.createElement("TD");
+  z1.innerText =traines[i].id;
+  z2.innerText =traines[i].name;
+  z3.innerText =traines[i].college;
+  z4.innerText =traines[i].branch;
+  y.appendChild(z1);
+  y.appendChild(z2);
+  y.appendChild(z3);
+  y.appendChild(z4);
+  x.appendChild(y);
+        }
+  document.getElementById("we3").appendChild(x);
+        
+    </script>
+</body>
+</html>

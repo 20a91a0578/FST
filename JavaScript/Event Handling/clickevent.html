@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event | click</title>
+</head>
+<body>
+    <h1 id="hp"></h1>
+    <!-- 1st wat -->
+    <input type="button" value="click" onclick="sam()">
+    <!-- 2nd way -->
+    <button id="btn_id" >Click2</button>
+    <!-- 3Rd way -->
+    <button id="btn_id2" >Click3</button>
+    <script>
+        sam=()=>{
+            document.body.style.background='orange';
+            document.getElementById("hp").innerHTML="hiiiii";
+        }
+        function sam1(){
+        document.body.style.background='red';
+        }
+        function sam2(){
+        document.body.style.background='blue';
+        }
+    
+        let s=document.getElementById("btn_id").onclick=sam1;
+    let s1=document.getElementById("btn_id2");
+         s1.addEventListener('click',sam2);
+        //  s1.addEventListener('click',function(){document.body.style.background='blue';})
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Dom MAnipulations</title>
+    </head>
+    <!--
+        To create a new Element in document :::: document.createElement("Elementname/TagName");
+        To create content in the created element :::::::document.createTextNode("Content you want to create");
+        To append the content  into created element//to add the created elements into document:::: tagnameId/CLass.appendChild(name);
+    -->
+<body>
+<!-- Process to create element using java script
+Step1:create an element ex:<p></p>
+Step2:set content  to element  ex:.innerText="content"
+Step3:add element to document/parent  Element ex::parentelement.append(element)/ParentElement.appendChild(element)
+Step4:insert element inside another element  ex:::insertBefore(element,position);
+step5:Remove the ELement ex:::parent.remove();
+step6:Remove the Child Element  ex::parent.removeChild(child)-->
+<h2>DOM MANIPULATIONS</h2>
+<div id="MErn">
+    <p>HTML</p>
+    <p>CSS</p>
+    <p id="p1">BOOTSTRAP</p>
+    <p>JS</p>
+</div>
+
+<script>
+    let ne_w=document.createElement("p");
+     ne_w.innerText='Mock  Interview';
+     let paren=document.getElementById("MErn");
+     paren.append(ne_w);
+     //paren.insertBefore(ne_w,document.getElementById("p1"));
+     
+</script>
+</body>
+</html>

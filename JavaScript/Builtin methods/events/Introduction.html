@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Handler</title>
+</head>
+<body>
+<button onclick="sample()">Click Here</button>
+<br>
+<span id="sp_id"></span>
+<!-- first way  -->
+<script type="text/javascript">
+	function sample(){
+		document.body.style.background='orange';
+		let sp_id = document.getElementById('sp_id');
+		sp_id.innerText = 'Drive Ready Class';
+
+	}
+	//call the function
+	//sample();
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+        var name='NDP';//global scope
+        console.log(name);
+        //block scope variable
+        {
+            let name2='Rajesh';
+            console.log(name2);
+            console.log(name);//name variable has global scope soit can  be accessed at any place
+            const card_no='52695525';
+            console.log(card_no);
+            //name2 and card_no are block scope variables they can be only accessed only in the block where they are declared
+        }
+        const card_no=58987;
+        console.log(card_no);//icaat can be accessed because ut has global block
+        //console.log(name2) it can not be accessed because it is out of block
+        //console.log(card_no) it can not be accessed because it is out of block
+
+    </script>
+</body>
+</html>

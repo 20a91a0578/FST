@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>ARRAY METHODS</h2>
+    <script>
+        var a=new Array(1,2,3,4,5,6);
+        //foreach it modifies the original array and not return any new array
+        console.log('before using forEach:',a);
+        a.forEach((ele,i,a)=>{a[i]=ele+5});
+        console.log('After using forEach:',a);
+        //filter return new array of elements which statisfies the given condition
+        var b=a.filter((ele)=>{return ele%2==0});
+        console.log('New array which generated from originalarray which contains only even elements:',b);
+        //map returns  new array performs a given operation on every element
+        var d=a.map((ele,i,a)=>{return 'hello '+ele;});
+        console.log('new  Array which generated from original array using map :',d);
+        //every returns a boolean value if all array elements satisfies the given condition or not
+        var s=a.every((ele,i,a)=>{ return ele>=1});
+        console.log('all elements in arrays are greater than or equal to 1: ',s);
+        //some return a boolean true value if any one element satisfies given function
+        var t=a.some((ele,i,a)=>{return ele<7});
+        console.log('is any element less than 5',t);
+        //find returns a value when the given condition satisfies 
+        var q=a.find((ele,i,a)=>{return ele>5});
+        console.log(q);
+        //reduce it reduces the array based on function
+        var o=a.reduce((acc,ele,i,a)=>{acc+=ele},0);
+        console.log(o);
+    </script>
+</body>
+</html>

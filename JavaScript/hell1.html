@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <p id="p"></p>
+    <span class="span"></span>
+    <div id="div"></div>
+    <form name="f1">
+    <input type="text" id="input" name="input">
+    </form>
+    <script>
+        document.getElementById("p").innerHTML="DRIVE READY";
+       // document.getElementById("p").innerText="<h1>HELLOOO</h1>";
+        var a=document.getElementsByClassName("span");
+        a[0].innerHTML="DRIVE READY";
+        var b=document.getElementsByTagName("div");
+        b[0].innerHTML="DRIVE READY";
+        // var z=document.forms["f1"]["input"];
+        // z.value="Drive Ready";
+        var c=document.getElementsByTagName("input");
+        c[0].value="gtgtgtg";
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TASKEL</title> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="hell.js"></script>
+</head>
+<body >
+    <div class="main">
+        <div class="m2">
+            <span  id="graph"class="glyphicon glyphicon-align-center"></span>
+            <h4 style="display:inline"> Attendance</h4>
+        </div>
+        <div class="m3">
+            <span class="glyphicon glyphicon-cog"></span>
+            <span class="glyphicon glyphicon-log-out"></span>
+            <span>| DriveReady</span>
+           
+        </div>
+    </div>
+    <div class="row">
+       <div class="col-sm-1"style="height:100%;">
+        <h3 title="HOME" class="glyphicon glyphicon-home"></h3><br>
+        <h3 title="Syallabus" class="glyphicon glyphicon-eye-open"></h3><br>
+        <h3 title="Upload Attendance" class="glyphicon glyphicon-cloud-upload"></h3><br>
+        <h3 title="Statstics" class="glyphicon glyphicon-signal"></h3><br>
+    </div>
+          <div id="mainsec"class="col-sm-11">
+            <div id="errmsg"></div>
+            <div class="row">
+              <div class="col-md-9 " id="mainsecsub1">
+                
+                <h4>SCAN ID HERE</h4>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="usr" onkeypress="clr()" required>
+                  </div>
+                  <button type="button" class="btn btn-primary" onclick="check()">Submit</button>
+                  
+            </div> 
+            <div id="cls" class="col-md-2" >
+              <h3 id="atenco" >Attendance  <h1 id="ate">0</h1></h3>
+          </div>
+            </div>
+            <div id="image" class="col-md-1" style="margin-left:20px">
+              <h4 style="margin-left:120px"><b>Student</b></h4>
+                <img src="help.png" alt="Reload">
+            </div>
+            <div class="col-md-6" style="margin-left:80px;">
+          <h4 style="text-align:left;"><b>Details:</b></h4>
+                <table class="table table-bordered" style="height:250px">
+                    
+                      <tr>
+                        <th>Roll Number</th>
+                        <th id="rno"><i>roll number of the student</i></th>
+                      </tr>
+                  
+                      <tr>
+                        <th>Name</th>
+                        <th id="name"><i>name of the student</i></th>
+                      </tr>
+                      <tr>
+                        <th>College</th>
+                        <td id="college"><i>college name</i></td>
+                      </tr>
+                      <tr>
+                        <th>Branch</th>
+                        <td id="bran"><i></i></td>
+                      </tr>
+                      <tr>
+                        <th>Passout Year</th>
+                        <th id="pass">-----</th>
+                      </tr>
+                  </table>
+            </div>
+            <div class="col-md-4">
+              <center><h5><b>Weekly Attendance Status Report</b></h5></center>
+              <table class="table table-bordered">
+                <tr><th>Day</th><th>Status</th></tr>
+                <tr><th>Monday</th><td class="td1">---</td></tr>
+                <tr><th>Tuesday</th><td class="td1">---</td></tr>
+                <tr><th>Wednesday</th><td class="td1">---</td></tr>
+                <tr><th>Thursay</th><td class="td1">---</td></tr>
+                <tr><th>Friday</th><td>---</td></tr>
+                <tr><th>Saturday</th><td>---</td></tr>
+              </table>
+            </div>
+           </div>
+          <!-- <div id="present"class="col-sm-4">
+           
+            <div id="pres" >
+                <h2 >MERN PRESENT COUNT <br> <h1 id="atenco">0</h1></h2>
+            </div>
+            <div id="tot" >
+                <h2 >MERN PRESENT COUNT <br> <h1>82</h1></h2>
+            </div>
+
+
+          </div>
+     -->
+      </div>
+      
+</body>
+</html>

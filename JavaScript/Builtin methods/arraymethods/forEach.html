@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Methods | forEach()</title>
+</head>
+<body>
+<h2>Array Methods | forEach()</h2>
+<p>This method not creates any new array and return it after iteration will completed.</p>
+</body>
+	<script type="text/javascript">
+	let salaries = [40000,25000,30000];
+	console.log(salaries);
+	salaries.forEach(function(amount,index,arr){
+		var increment = amount/10;
+		console.log(increment)
+		arr[index] = amount + increment;
+	});
+	console.log(salaries);
+	
+
+	
+	</script>
+</html>

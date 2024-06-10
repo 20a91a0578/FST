@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#i{
+    color:green;
+}
+.he{
+    font-size:50px;
+}
+input[type=text] {
+  background-color: yellow;
+}
+
+input[type=button] {
+  color:blue;
+}
+#s:hover{
+background-color:brown;
+}
+    </style>
+</head>
+<body>
+    <script>
+        a=[1,2,3,4]
+        a.forEach(function(e,i,a){
+            a[i]=e+10;
+        })
+        console.log(a);
+        va=a.map(function(e,l,a){
+            console.log(e+"D");
+        })
+        let as=a.find(function(e,i,a){
+            return e==122;
+        })
+        console.log(as);
+        function test()
+        {
+            document.write("hiii");
+        }
+        let v=setTimeout(test,2000);
+        let k=setTimeout(clearTimeout(v),3000);
+        function fun()
+        {
+            document.querySelector("div").innerHTML="DIV TAG";
+            document.querySelector("span").innerHTML="SPAN TAG";
+            document.querySelector("p").innerHTML="PARA TAG";
+            // document.getElementById("i").innerHTML="DIV TAG";
+            // document.getElementById("s").innerHTML="SPAN TAG";
+            // document.getElementById("p").innerHTML="PARA TAG";
+        docume}
+    </script>
+    <h2>Styling Forms</h2>
+
+    <form name="input">
+      Firstname:<input type="text" name="Name"  size="20">
+      Lastname:<input type="text" name="Name"  size="20">
+      <input type="button" value="Example Button">
+    </form>
+    <a href="www.google.com">click</a>
+    <div id="i" class="he"></div>
+    <span id="s"></span>
+    <p id="p"></p>
+    <input type="button" value="clcik" onclick="fun()">
+
+</body>
+</html>

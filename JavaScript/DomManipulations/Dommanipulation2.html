@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Dom MAnipulations</title>
+    </head>
+    <body>
+        <h1>Using lists</h1>
+<ul type="square" id="ul1">
+    <li>Html</li>
+    <li id="gf">Css</li>
+    <li id="bs_id">Bs</li>
+</ul>
+        <script>
+            
+             let new_l=document.createElement("li");
+             new_l.innerText="Java Script";
+             let parn3=document.getElementById("ul1");
+             parn3.append(new_l);
+             let new_l1=document.createElement("li");
+             new_l1.innerText="MockInterview";
+             let parent1=document.getElementById("ul1");
+             parent1.insertBefore(new_l1,document.getElementById("bs_id"));
+             let lio=document.getElementById("gf");
+             parent1.removeChild(lio);
+        </script>
+        </body>
+        </html>

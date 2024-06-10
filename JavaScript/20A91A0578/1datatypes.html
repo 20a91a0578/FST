@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types</title>
+    <script>
+        function fun()
+        {
+        str="";
+        var a;
+        str+="8 : "+typeof(8)+"<br>";
+        str+="3.5 : "+typeof(3.5)+"<br>";
+        str+="xyz : "+typeof("xyz")+"<br>";
+        str+="true : "+typeof(true)+"<br>";
+        str+="[1,2,3] : "+typeof([1,2,3])+"<br>";
+        str+="{ name : abcd, id : 1} : "+typeof({"name":"xyz","id":2})+"<br>";
+document.getElementById("dat").innerHTML=str;
+        }
+    </script>
+</head>
+<body>
+    <h1>To know the Data Types Click the Below Button</h1>
+    <input type="button" value="click" onclick="fun()">
+    <h2 id="dat" align="center"> </h2>
+</body>
+</html>

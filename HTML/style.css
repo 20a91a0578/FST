@@ -1,0 +1,184 @@
+
+.header
+{
+    background-color:white;
+    height:100px;
+    text-align:left;
+    text-decoration:underline;
+    text-decoration-color: crimson;
+    padding-top: 10px;
+}
+.nav{
+    background-color: rgb(27, 21, 205);
+    height:80px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius:12px;
+}
+.child
+{
+    margin-left:2px;float:left;
+}
+.hi ul li {
+display:inline;
+border:1px solid black;
+padding:5px;
+background-color: white;
+border-radius: 10px;
+text-decoration: none;
+padding:10px;
+
+}
+.hi ul li a{text-decoration: none;}
+.hi ul li:hover
+{
+    background-color: #003860;
+}
+.hi ul li a:hover{
+    color:white;
+}
+
+#pa
+{
+    color:#003860;
+    text-decoration: underline;
+   font-size: 20px;
+    text-align: center;
+    text-shadow:2px 3px 4px #003860;
+
+}
+#para
+{
+    width:90%;
+    margin:auto;
+    border:1px solid blue;
+    text-indent:100px;
+    text-align:justify;
+    word-spacing:5px;
+    border-radius: 25px;
+    padding-left:25px;
+    padding-right: 25px;
+    box-shadow:10px 10px 10px 5px #003860;
+}
+#position
+{
+    width:90%;
+    height:auto;
+    margin:auto;
+    border:1px solid blue;
+    border-radius: 25px;
+    padding-left:25px;
+    padding-right: 25px;
+    box-shadow:10px 10px 10px 5px #003860;
+}
+#table
+{
+    width:90%;
+    height:auto;
+    margin:auto;
+    border:1px solid blue;
+    border-radius: 25px;
+    padding-left:25px;
+    padding-right: 25px;
+    padding-top: 15PX;
+    padding-bottom:10PX ;
+    box-shadow:10px 10px 10px 5px #003860;
+}
+#table thead 
+{
+    background-color:#003860;
+    padding:10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#table thead th{
+    color:white;
+}
+#table tbody td{text-align: center;}
+#table tbody tr:nth-child(even)
+{
+    background:white;
+}
+#table tbody  tr:nth-child(odd)
+{
+    background:skyblue;
+}
+#table tbody tr:nth-child(odd):hover
+{
+    background:white;
+}
+#table tbody tr:nth-child(even):hover
+{
+    text-transform:uppercase;
+    background:skyblue;
+}
+#table tbody tr td button
+{
+border-radius: 5px;
+
+}
+#table tbody tr td button:hover
+{
+background-color:red;
+text-transform:uppercase;
+}
+#gallery
+{
+   
+    height: 700px;
+    width: 92%;
+    margin: auto;
+    border: 1px solid #003860;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px 5px #003860;
+    padding: 30px;
+
+}
+.galleryrow .gal{
+    height: 350px;
+    margin-left: 30px;
+    width:22%;
+    float:left;
+    margin-bottom: 45px;
+   
+}
+.galleryrow .gal img{
+    width:250px;
+    height: 250px;
+    border-radius: 20px;
+}
+.galleryrow .gal .imgname
+{
+    background-color: #003860;
+    width: 50%;
+    height:10%;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 10px;
+    opacity:8;
+    text-align: center;
+    margin-left: 55px;
+}
+.galleryrow .gal .imgname p
+{
+    padding-top: 7px;
+    color:white;
+}
+.galleryrow .gal img:hover{
+    box-shadow:3px 3px 8px 5px black;
+    border-radius:2px;
+    transition: all 1s;
+}
+@media  screen and (min-width:400px) and (max-width:600px){
+    body{
+        background:yellow;
+    }
+    
+    
+}
+@media screen and (min-width:601px) and (max-width:800px){
+    body
+    {
+        background:red;
+    }
+   
+}

@@ -1,0 +1,40 @@
+.main
+{
+	width: 100%px;
+	height: 800px;
+	background-color: rgb(207, 204, 204);
+	background-size: cover;
+}
+.back
+{
+	background-color: white;
+
+    border-radius: 5px;
+}
+.b
+{
+	height: 100px;
+	width: 150px;
+	background-color: white;
+	float: right;
+	margin-right: 30px;
+}
+.a
+{
+
+	height: 100px;
+	width: 150px;
+	background-color: white;
+	float: left;
+	
+}
+
+.e
+{
+	height: 80px;
+	width: 120px;
+	background-color: white;
+	padding-top: 30px;
+
+
+}

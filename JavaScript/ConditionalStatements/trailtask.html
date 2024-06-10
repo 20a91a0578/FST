@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS | Task</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="row" id="row_id">
+		
+	</div>
+</div>
+<script type="text/javascript">
+	let trainees = [
+    {
+                "id":1234,
+                "name":"prasad",
+                "college":"Aec",
+                "branch":"CSE"
+            },
+            {
+                "id":1235,
+                "name":"rajesh",
+                "college":"Acet",
+                "branch":"it"
+            },
+            {
+                "id":1238,
+                "name":"satya",
+                "college":"Aec",
+                "branch":"CSE"
+            }
+	]
+	let i;
+	let row_div = document.getElementById('row_id');
+	for(i=0;i<=trainees.length-1;i++){
+		let div= document.createElement('div');
+		div.classList.add("col-md-4");
+        div.style.border="1px solid green";
+		let p1= document.createElement('p');
+		let p2= document.createElement('p');
+		let p3= document.createElement('p');
+		let p4= document.createElement('p');
+        p1.style.border="1px solid blue";
+        p2.style.border="1px solid blue";
+        p3.style.border="1px solid blue";
+        p4.style.border="1px solid blue";
+        p1.style.textAlign="center";
+        p2.style.textAlign="center";
+        p3.style.textAlign="center";
+        p4.style.textAlign="center";
+		p1.innerText = trainees[i].id;
+		p2.innerText = trainees[i].name;
+		p3.innerText = trainees[i].college;
+		p4.innerText = trainees[i].branch;
+		div.append(p1);
+		div.append(p2);
+		div.append(p3);
+		div.append(p4);
+		//console.log(div);
+		row_div.append(div);
+	}
+</script>
+</body>
+
+</html>

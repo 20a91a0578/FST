@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <script>
+        var co=1;
+        function fun()
+        {
+             var de='img'+co+".jpg";
+            co+=1;
+var d=document.getElementById("ew");
+d.innerHTML='<img src="'+de+'" style="width:250px height:250px">';
+if(co==5)
+{
+    document.getElementById("e").innerHTML="UPTO FIVE IMAGES YOU CAN CHANGE";
+    d.innerHTML='<img src="img4.jpg" style="width:250px height:250px">';
+}
+        }
+       
+    </script>
+</head>
+<body>
+    <input type="button" value="Change" onclick="fun()">
+    <p id="ew"></p>
+    <p id="e"></p>
+
+    </p>
+</body>
+</html>

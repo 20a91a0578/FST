@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS  | DOM </title>
+</head>
+<body>
+    <center><h1>Document Object Methods </h1></center>
+    <h2 id="id1"></h2>
+    <h2 class="id2"></h2>
+    <h2></h2>
+    <h2 id="id3">4. Queryselector is used</h2>
+    <h2 id="id3">4.5.0 Query selectorAll is used</h2>
+    <h2 class="id4">5. QuerySelectorAll is used</h2>
+    <h2 class="id4">6. QuerySelectorAll is used</h2>
+    <h3>DriveReady</h3>
+    <h3>FullStack</h3>
+    <script>
+       document.getElementById("id1").innerHTML="1. getElementById  is used";
+      let b1=document.getElementsByClassName("id2");
+            b1[0].innerHTML="2.elementByClassName is used";
+    let h=document.getElementsByTagName("h2");
+    for(let i=0;i<h.length;i++)
+    {
+        h[2].innerHTML="3. getElementbyTag is used";
+    }
+    document.querySelector("#id3").style.color="pink";
+        let a=document.querySelectorAll(".id4");
+        a[0].style.color="red";
+        a[1].style.backgroundColor="orange";
+        let b=document.querySelectorAll("#id3")
+        b[0].style.color="brown";
+        b[1].style.color="brown";
+    var c=document.querySelectorAll(".id4");
+    c[0].style.fontSize="40px";
+    c[0].style.backgroundColor="black"
+    c[0].style.color="white";
+    c[0].style.textAlign="center";
+    c[0].style.textShadow="2px 2px brown";
+    c[1].style.fontSize="40px";
+   
+    </script>
+</body>
+</html>

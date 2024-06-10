@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="number" id="number" onkeyup="clear()">
+    <input type="button" value="tochecknumber" onclick="fun()">
+    <input type="button" value="tocheckalpha" onclick="fun1()">
+    <input type="button" value="tocheckalnum" onclick="fun2()"><br> <span id="hel" style="color:red"></span>
+    <span id="hell" style="color:greenyellow"></span>
+   <script>
+    num=/^[0-9]{10}$/
+    al=/^[a-zA-Z]{1,100}$/
+    alnum=/^[a-zA-Z0-9]{1,100}$/
+    function fun()
+    {
+        var n=document.getElementById("number").value;
+        var o=num.test(n);
+        if(o==true)
+        document.getElementById("hel").innerText=" given input is Number ";
+        else
+        document.getElementById("hel").innerText=" given input is not a Number ";
+        
+    }
+    function fun1()
+    {
+        var n=document.getElementById("number").value;
+        var o=al.test(n);
+        if(o==true)
+        document.getElementById("hel").innerText=" given input is alpha ";
+        else
+        document.getElementById("hel").innerText=" given input is not a notalpha ";
+        
+    }
+    function fun2()
+    {
+        var n=document.getElementById("number").value;
+        var o=alnum.test(n);
+        if(o==true)
+        document.getElementById("hel").innerText=" given input is alnum ";
+        else
+        document.getElementById("hel").innerText=" given input is not a not alnum ";
+        
+    }
+   </script>
+</body>
+</html>

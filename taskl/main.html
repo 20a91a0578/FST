@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TASKEL</title> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="hell.js"></script>
+</head>
+<body >
+    <div class="main">
+        <div class="m2">
+            <span  id="graph"class="glyphicon glyphicon-align-center"></span>
+            <h4 style="display:inline">Codemind Attendance</h4>
+        </div>
+        <div class="m3">
+            <span class="glyphicon glyphicon-cog"></span>
+            <span class="glyphicon glyphicon-log-out"></span>
+            <span>|  Rajesh</span>
+           
+        </div>
+    </div>
+    <div class="row">
+       <div class="col-sm-1"style="height:100%;">
+        <h3 class="glyphicon glyphicon-home"></h3><br>
+        <h3 class="glyphicon glyphicon-eye-open"></h3><br>
+        <h3 class="glyphicon glyphicon-cloud-upload"></h3><br>
+        <h3 class="glyphicon glyphicon-signal"></h3><br>
+    </div>
+          <div id="mainsec"class="col-sm-7">
+            <div id="errmsg"></div>
+            <div class="col-md-10 col-md-offset-1" id="mainsecsub1">
+                
+                <h4>SCAN ID HERE</h4>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="usr" onkeypress="clr()" required>
+                  </div>
+                  <button type="button" class="btn btn-primary" onclick="check()">Submit</button>
+                  
+            </div> 
+            <div id="image" class="col-md-2">
+                <img src="help.png" alt="Reload">
+            </div>
+            <div class="col-md-9" style="margin-left:80px;">
+                <table class="table table-bordered" style="height:250px">
+                    
+                      <tr>
+                        <th>Roll Number</th>
+                        <th id="rno"><i>roll number of the student</i></th>
+                      </tr>
+                  
+                      <tr>
+                        <th>Name</th>
+                        <th id="name"><i>name of the student</i></th>
+                      </tr>
+                      <tr>
+                        <th>College</th>
+                        <td id="college"><i>college name</i></td>
+                      </tr>
+                      <tr>
+                        <th>Branch</th>
+                        <td id="bran"><i></i></td>
+                      </tr>
+                      <tr>
+                        <th>Passout Year</th>
+                        <th id="pass">-----</th>
+                      </tr>
+                  </table>
+            </div>
+           </div>
+          <div id="present"class="col-sm-4">
+           
+            <div id="pres" >
+                <h2 >MERN PRESENT COUNT <br> <h1 id="atenco">0</h1></h2>
+            </div>
+            <div id="tot" >
+                <h2 >MERN PRESENT COUNT <br> <h1>82</h1></h2>
+            </div>
+
+
+          </div>
+    
+      </div>
+      
+</body>
+</html>

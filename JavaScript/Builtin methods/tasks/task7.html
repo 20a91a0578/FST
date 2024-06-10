@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESS NAME</title>
+</head>
+<body>
+    <script>
+        var s=0;
+        var c=0;
+        while(s<=100){
+        var a=Math.floor(Math.random()* 10);
+        var random_num =  Math.floor(Math.random()* 10);
+        if(a==random_num)
+        {
+            s+=10;
+            c+=1;
+           // alert("your guess is correct");
+        }
+        else
+        {
+            c+=1;
+        //alert("your guess is wrong");
+        }
+    }
+    alert("you won the game!Game is Over:::::"+ c);
+    </script>
+</body>
+</html>

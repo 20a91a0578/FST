@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evenodd</title>
+    <script>
+        function fun(){
+            var inp=prompt("enter Elements of array seperated by spaces");
+            var a=inp.split(" ");
+            var even=0;
+            var odd=0;
+            for(let i=0;i<a.length;i++)
+            {
+                a[i]=parseInt(a[i]);
+                if(a[i]%2==0)
+                even+=a[i];
+                else
+                odd+=a[i];
+            }
+            document.write("<br>Elements in Array");
+            for(let i=0;i<a.length;i++)
+            document.write(a[i]+" ");
+            var str="<br>Even Elements sum:"+even+"<br>Odd elements sum:"+odd;
+            document.write(str)
+            document.getElementById(ele).innerHTML=str;
+        }
+        
+    </script>
+</head>
+<body>
+    <h2>Click below to create an array with desired number of elements And Print even and Odd elements Sum</h2>
+    <input type="button" value="Create" onclick="fun()">
+</body>
+</html>

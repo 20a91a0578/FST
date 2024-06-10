@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Enter some text in the fields below, then press the "Submit form" button to submit the form.</p>
+
+<form id="myForm">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br><br>
+  <select name="colleges" onchange="getcolleges(this.value)">
+  	<option>--select colleges ---</option>
+  	<option value="AEC">AEC</option>
+  	<option value="ACET">ACET</option>
+  	<option value="ACOE">ACOE</option>
+  </select><br><br>
+  <input type="button" onclick="formsubmit()" value="Submit form">
+
+</form>
+
+<script>
+function formsubmit(){
+	//document.getElementById('myForm').submit();
+	let form = document.getElementById('myForm');
+	form.submit();
+	//form.reset();
+	///F:/Javascript/EventHandelrs2/form_events.html?fname=sss&lname=sssss
+	
+}
+function getcolleges(college_name){
+	alert(college_name);
+}
+
+</script>
+
+</body>
+</html>

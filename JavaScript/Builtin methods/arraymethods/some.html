@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Methods | some()</title>
+</head>
+<body>
+<h2>Array Methods | some()</h2>
+<p>This method returns the vaule when condition is satifisied then exist from the iteration loop.</p>
+</body>
+	<script type="text/javascript">
+	
+		let trainees = ['venkatesh@gmal.com','divya@gmal.com','ajay@gmal.com','vinay@gmal.com'];
+		let email_existornot = trainees.some(testmail)
+		function testmail(email,i,arr){
+			return email=='divya@gmal.com';
+		}
+		console.log(email_existornot);
+	
+	</script>
+</html>

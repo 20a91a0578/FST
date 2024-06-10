@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=24;
+        console.log('var is a global value a=',a);
+        {
+            var a=256;
+            console.log('we can  redeclare var variable a =',a);
+
+        }
+        console.log('if we change value of var it will be applied in whole program a=',a);
+        let b=5;
+        console.log('let is block scope variable b= ',b);
+        {
+             b=89;
+            console.log('we can reintialize the let variable b=',b);
+        }
+        console.log('the changes made in one block applicable to only that block  b=',b);
+        const c=5;
+        console.log('value of c= ',c);
+      {
+//c=45;
+//console.log(c);    causes error
+      }
+      console.log('we can not reassign or redeclare variable belongs to const ');
+    </script>
+</body>
+</html>

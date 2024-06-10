@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Methods | map()</title>
+</head>
+<body>
+<h2>Array Methods | map()</h2>
+<p>This method creates new array and return it after iteration will completed.</p>
+</body>
+	<script type="text/javascript">
+	let trainees = ['venkatesh','divya','ajay','vinay'];
+	//syntax of map()
+	// arr.map(function funName(currentEle,index,arr){
+	// 	//code
+	// });
+	let names = trainees.map(function(name) {
+		return "Dear Student "+name;
+		//console.log(arr)
+	})
+	console.log(names); // creates the new array
+	console.log(trainees); // old array 
+
+	
+	</script>
+</html>

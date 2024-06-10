@@ -1,0 +1,32 @@
+#header
+{
+    border:1px solid black; height:100px;width:100%;background-color: white;}
+.main{
+    
+
+    width:90%;
+    margin:auto;
+    height: 800px;
+    border:1px solid blue;
+    text-indent:100px;
+    text-align:center;
+    word-spacing:5px;
+    border-radius: 25px;
+    padding-left:25px;
+    padding-right: 25px;
+    box-shadow:10px 10px 10px 5px green;
+}
+#form
+{
+    margin-left:80px;
+}
+#ema{margin-left:76px;}
+#usr{margin-right:-40px;}
+#pass{margin-right:-40px;}
+#gen{margin-left:50px;}
+#la{margin-left:-2px;}
+#up{margin-left:95px;}
+#col{margin-left:40px;}
+#br{margin-left:55px;}
+#age{margin-left:-10px}
+#dob{margin-left:40px;}

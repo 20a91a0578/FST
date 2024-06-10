@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS  | DOM </title>
+</head>
+<body>
+    <h2> DOM stands for Document Object Model</h2>
+    <img src="../html/images/w3.jpg" alt="" height="50px" width="50px"><br>
+    <img src="../html/images/thor.jpeg" alt="" height="50px" width="50px"><br>
+    <a href="#">link1</a><br>
+    <a href="#">link2</a><br>
+    <a href="#">link3</a><br>
+    <p id="hel">hello</p>
+    <form action="" method="post" id="form1">
+        <input type="text" name="firstname">
+    </form>
+    <form action="" id="form2">
+        <input type="text" name="lastname">
+    </form>
+    <script>
+        console.log(document.title);
+        console.log(document.head);
+        console.log(document.images);
+        console.log(document.links);
+        console.log(document.forms);
+       // document.getElementById();
+        //document.getElementsByClassName();
+        //document.getElementsByTagName();
+        //document.querySelector();
+        //document.querySelectorAll();
+        document.getElementById("hel")
+document.querySelector("form").style.backgroundColor="red";
+    </script>
+</body>
+</html>

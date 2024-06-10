@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        input{
+border-radius:5px;
+color:white;
+background-color: blue;
+        }
+        table
+        {
+            width:300px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table task</title>
+    <script src="tablescrip.js"></script>
+</head>
+<body>
+    <center>
+        <table  id ="table" border="3">
+            <tr>
+                <th>Name</th>
+                <th>Id</th>
+            </tr>
+            <tr>
+                <td>ABCD</td>
+                <td>123</td>
+            </tr>
+            <tr>
+                <td>EFGH</td>
+                <td>456</td>
+            </tr>
+        </table>
+        <h4>Choose Options to perform Operations</h4>
+        <input type="button" value="Add col" onclick="add()">
+        <input type="button" value="Delete col" onclick="del()">
+        <input type="button" value="Update col" onclick="upd()">
+        <input type="button" value="Read" onclick="red()">
+    <h1 id="id"></h1>
+    <h2 id="ty"></h2>
+    </center>
+</body>
+</html>

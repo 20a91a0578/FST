@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="text" name="fullname" placeholder="enter name" id="name_id" onkeyup="getname();">
+
+<!-- <button onclick="getname();">click here</button> -->
+<br>
+<span id="sp_id"></span>
+<script type="text/javascript">
+	function getname(){
+		let nn = document.getElementById('name_id').value;
+		document.getElementById('sp_id').innerText= nn;
+	}
+</script>
+</body>
+</html>

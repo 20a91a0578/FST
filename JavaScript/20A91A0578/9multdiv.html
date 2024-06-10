@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultDiv</title>
+</head>
+<body>
+    <script>
+        var a=prompt("enter first number");
+        var b=prompt("enter Second Number");
+        document.write("<h2> The Given Numbers Are : "+a+" "+b+"<br><br><br>");
+        mult=(a,b)=>document.write("Multiplication : "+a+" x "+b+" = "+(a*b)+"<br><br><br>");
+        div=(a,b)=>{
+            if(b==0)
+            document.write("Division with Zero Not Possible");
+            else
+            document.write("Division : "+a+" / "+b+" = "+(a/b));
+        }
+        
+        mult(a,b);
+        div(a,b);
+    </script>
+</body>
+</html>

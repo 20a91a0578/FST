@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Handler</title>
+</head>
+<body>
+<button id="btn_id">Mouse over here</button>
+<!-- 2nd way  -->
+<script type="text/javascript">
+	// function sample(){
+	// 	document.body.style.background='red';
+	// }
+	let btn = document.getElementById('btn_id');
+	//btn.onclick = sample // functionname
+	btn.onclick = function(){
+		document.body.style.background='green';
+	} // annomynous function
+	
+	
+</script>
+</body>
+</html>

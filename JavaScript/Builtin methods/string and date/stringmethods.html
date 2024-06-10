@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Methods</title>
+</head>
+<body>
+<h2>String Methods</h2>
+<table border="1">
+	<tr>
+		<td>d</td>
+		<td>r</td>
+		<td>i</td>
+		<td>v</td>
+		<td>e</td>
+		<td>&nbsp;</td>
+		<td>r</td>
+		<td>e</td>
+		<td>a</td>
+		<td>d</td>
+		<td>y</td>
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+		<td>4</td>
+		<td>5</td>
+		<td>6</td>
+		<td>7</td>
+		<td>8</td>
+		<td>9</td>
+		<td>10</td>
+	</tr>
+	<tr>
+		<td>-11</td>
+		<td>-10</td>
+		<td>-9</td>
+		<td>-8</td>
+		<td>-7</td>
+		<td>-6</td>
+		<td>-5</td>
+		<td>-4</td>
+		<td>-3</td>
+		<td>-2</td>
+		<td>-1</td>
+	</tr>
+</table>
+</body>
+	<script type="text/javascript">
+	function ss(txt){
+		document.write('<b>'+txt+'</b><br>');
+	}
+	let str = 'drive ready batch';
+	let str2 = ' mern batch';
+	let str3 = ' new batch';
+	//let str = new String('drive ready');
+	
+	ss('Original String = '+str);
+	ss('String length = '+str.length);
+	ss('Char At  = '+str.charAt(3));//v
+	ss('Index of  = '+str.indexOf('e'));//4
+	ss('Index of - 2ndway  = '+str.indexOf('ready'));//6
+	ss('Last Index of  = '+str.lastIndexOf('r')); //6
+	let str1 = 'DRIVE READY';
+	ss('Lowercase of string = '+str1.toLowerCase());
+	ss('uppercase of string = '+str.toUpperCase());
+	ss('concatenation of string = '+str.concat(str2));
+	ss('concatenation of string 2 = '+str.concat(str2, str3));
+	ss('trim of string = '+str.trim()) // removing the spaces
+	//converting string into an array
+	//console.log(str.split(""));
+	let newstr = 'uday_kiran';
+	//console.log(newstr.split("_"));
+	let newstr1 = 'uday,kiran,raju';
+	//console.log(newstr1.split(","));
+	ss('startswith of string = '+str.startsWith('a'));// returns boolean value
+	ss('endswith of string = '+str.endsWith('y'));
+	// returns boolean value
+	
+	//slice method
+	//ss('slice of string = '+str.slice(startpos,endpos-1));
+	//it is allows postive and negative index values
+	ss("STRING:"+str);
+	ss('slice of string = '+str.slice(1,5));
+	ss('slice of string = '+str.slice(-2)); //dy
+	ss('slice of string = '+str.slice(-5)); //ready
+	ss('slice of string = '+str.slice(-4,-2)); //ea
+
+	//substring method
+	// it is allowing the positive indexes
+	ss('substring of string = '+str.substring(4,2));
+
+	//substr method
+	ss('substr of string = '+str.substr(2,10));
+
+	//includes method
+	ss('includes of string = '+str.includes('batch'));
+ss('hell9876543')
+	// issf(str.includes('batch') == true){
+
+	// }else{
+
+	// }
+	// it returns boolean
+
+	//charCodeAt method -- for finding the ascii code values
+	ss('charCodeAt of string = '+str1.charCodeAt('d'));
+
+	//repeat method --
+	ss('repeat of string = '+str.repeat(3));
+
+	//replace method --
+	ss('replace of string = '+str.replace('batch','course'));
+
+
+
+
+
+	
+	</script>
+</html>

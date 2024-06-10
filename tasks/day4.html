@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>clickbelow to get details:</h2>
+    <input type="button" value="click" onclick="fun()">
+    <script>
+        var a=new Array(1,2,3,4);
+        console.log(a);
+        [b, ,d,e]=a;
+        console.log('after destructring the array');
+        console.log('b=',b,' d=',d,' e=',e);
+        class hell{
+            constructor(name,id){
+                this.name=name;
+                this.id=id;
+            }
+            showdetails(){
+                document.write('NAME is:'+this.name+"<br>Id : "+this.id);
+            }
+        }
+        function fun()
+        {
+            var n=new hell("ABCD","1236");
+            n.showdetails();
+        }
+    </script>
+</body>
+</html>

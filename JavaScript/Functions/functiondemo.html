@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Functions</title>
+</head>
+<body>
+    <!--
+       * Function is a block of code to do a particular task or event.
+       why functions?
+       Code Reusability.
+       How to declare a Function.
+       Syntax::function functionname(parameters)
+       {
+        //code;
+        //return value;
+       }
+       How to call function?
+       functionname();
+
+       Types of Functions
+       1.Normal Function
+       2.Anonymus Function
+       3.IIFE
+       4.Arrow Function
+    -->
+    <script>
+        //function with no parameters
+        function login()
+        {
+            alert("Logged in successfully");
+        }
+        login();
+    //function with parameters.
+    function getname(name)
+    {
+        //document.write(name);
+        return name+"<br>";
+    }
+    document.write(getname("rajesh"));
+    //function with more than one parameter.
+    function prod(a,b)
+    {
+        return a*b;
+    }
+    document.write(+prod(20,30));
+    </script>
+</body>
+</html>

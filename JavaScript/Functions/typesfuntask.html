@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types Functions Task</title>
+</head>
+<body>
+    <!--loops executs line by line
+    functions executesblockby block-->
+    <script>
+        function greet(name)
+        {
+            document.write("HELLO !, "+name+"<br>");
+        }
+        ord=function(n){
+            document.write("Your Order is "+n+"<br>");
+        }
+        var bil=(function bill(f,g){return f+g})(100,10);
+
+        greet("Rajesh");
+        ord("Tea");
+        document.write("Your bill including Tax : "+bil+"<br>");
+    </script>
+</body>
+</html>

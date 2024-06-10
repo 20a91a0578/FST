@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Dom MAnipulations</title>
+    </head>
+    <body>
+        
+        <h1>Using Table</h1>
+        <table border="1">
+            <tr id="tr1">
+                <td>HTML</td>
+                <td id="td_id">CSS</td>
+                <td id="we">BS</td>
+                <td>JS</td>
+            </tr>
+        </table>
+        
+        <script>
+            let new_td=document.createElement("td");
+     new_td.innerText="MockInterview";
+     let parn2=document.getElementById("tr1");
+     parn2.insertBefore(new_td,document.getElementById("td_id"));
+     let mock=document.getElementById("we");
+     //mock.remove();
+     parn2.removeChild(mock);
+        </script>
+        </body>
+        </html>

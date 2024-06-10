@@ -1,0 +1,102 @@
+<!DOCtype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formtask</title>
+   <style>
+    div
+    {
+        text-transform: uppercase;
+        margin-top: 10px;
+        border: 1px ;
+    }
+   </style>
+</head>
+<body>
+    <script>
+         function submit_formdata()
+        {
+            var em=/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+            num=/^[0-9]{10}$/;
+            var us=/^[a-zA-Z]{4,16}$/;
+            var user=document.getElementById("u_id").value;
+            var email=document.getElementById("e_id").value;
+            var pass=document.getElementById("pass").value;
+            var dob=document.getElementById("dob").value;
+            var mumber=document.getElementById("mumber").value;
+            var course=document.getElementById("sele").value;
+            var re;
+            re=us.test(user);
+           
+            if(user==''||re==false)
+            {
+                document.getElementById("user_err").innerHTML="UserName can't be null or can't contain numbers<br><br><br>";
+                return false;
+            }
+            re=em.test(email);
+            if(email==''||re==false)
+            {
+                
+               
+                document.getElementById("user_err").innerHTML="Please enter the valid Email<br><br><br>";
+                return false;
+            }
+            if(pass==''||pass.length<4)
+            {
+                
+               
+                document.getElementById("user_err").innerHTML="password can't be null or it should contain more than four character's<br><br><br>";
+                return false;
+            }
+            if(dob=='')
+            {
+                document.getElementById("user_err").innerHTML="Please enter the dob<br><br><br>";
+                return false;   
+            }
+            re=num.test(mumber);
+            if(mumber==''||re==false)
+            {
+                document.getElementById("user_err").innerHTML="Please enter the mobile<br><br><br>";
+                return false; 
+            }
+            if(course==0)
+            {
+                document.getElementById("user_err").innerHTML="Please select a Course<br><br><br>";
+                return false;
+            }
+        }
+        function clrmsg()
+        {
+            document.getElementById("user_err").innerText=" ";
+             
+        }
+    </script>
+    <center>
+        <div id="user_err" style="color:red">
+
+        </div>
+        <form onsubmit="return submit_formdata()">
+            <label>Username:</label> <input type="text" name="name" onkeypress="clrmsg()" id="u_id" style="margin-left: 5px;"><br><br>
+            <label style="margin-left: 10px;">EMAIL:</label> <input type="text" name="name" style=" margin-left:10px ;" onkeypress="clrmsg()" id="e_id">
+            <br><br>
+            <label style="margin-left:-17px;">PASSWORD:</label> <input type="password" name="name" onkeypress="clrmsg()"id="pass"><br><br>
+            <label for="">Mobile:</label> <input type="text" id="mumber" style="margin-left: 20px;" onkeypress="clrmsg()"><br><br>
+ 
+            <label style="margin-left:-20px" >DOB: </label><input type="DATE" onkeypress="clrmsg()" style="margin-left:5px" id="dob"><br><br>
+             <label for="" style="margin-left:-80px">Branch</label>
+          <select name="" id="sele">
+            <option value="0">Select</option>
+            <option value="1">CSE</option>
+            <option value="2">ECE</option>
+            <option value="3">IT</option>
+          </select>
+            <BR>
+            <br>
+             <input type="submit" value="submit" >
+            </form>
+    </center>
+        
+</body>
+</html>

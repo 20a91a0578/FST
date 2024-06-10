@@ -1,0 +1,107 @@
+#header{
+    text-align:center;
+}
+#container
+{
+    width:100%;
+    height:auto;
+}
+#sub_head
+{
+    text-align: center;
+   
+}
+.hiii
+{
+   
+    width:100%;
+
+}
+#sub_head button{
+    border:1px solid white;
+    padding:6px;
+    margin-left:10px;
+}
+#sub_head button:hover{
+    background-color: green;
+    color:white;
+}
+.card{
+    background-color: rgb(9, 9, 72);
+    color:white;
+    height:400px;
+    margin-top:30px;
+    margin-bottom:30px;
+    border:1px solid orange;
+}
+.card1{
+    background-color: rgb(148, 205, 148);
+    color:white;
+    height:400px;
+    margin-top:30px;
+    margin-bottom:30px;
+    border:1px solid orange;
+}
+#hei
+{
+    text-align: center;
+}
+.card2{
+    background-color: rgb(59, 131, 159);
+    color:white;
+    height:400px;
+    margin-top:30px;
+    margin-bottom:30px;
+    border:1px solid orange;
+}
+.card3{
+    background-color: rgb(155, 61, 150);
+    color:white;
+    height:400px;
+    margin-top:30px;
+    margin-bottom:30px;
+    border:1px solid orange;
+}
+.card4{
+    background-color: rgb(104, 149, 104);
+    color:white;
+    height:400px;
+    margin-top:30px;
+    margin-bottom:30px;
+    border:1px solid orange;
+}
+.card5{
+    background-color: rgb(160, 65, 65);
+    color:white;
+    height:400px;
+    margin-top:30px;
+    margin-bottom:30px;
+    border:1px solid orange;
+}
+.card6{
+    background-color: rgb(123, 16, 217);
+    color:white;
+    height:400px;
+    margin-top:30px;
+    margin-bottom:30px;
+    border:1px solid orange;
+}
+
+.imga
+{
+    width:100%;
+
+}
+#h43{
+    margin-left:6px;
+}
+h3{
+    text-align:center;
+}
+#name
+{
+    width:80%;
+    height:10%;
+    color:orange;
+    border-radius: 10px;
+}

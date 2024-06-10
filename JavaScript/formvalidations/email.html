@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="number" id="number" onkeyup="clear()">
+    <input type="button" value="click" onclick="fun()">
+   <br> <span id="hel" style="color:red"></span>
+    <span id="hell" style="color:greenyellow"></span>
+    <script>function fun()
+        {
+        var n=document.getElementById("number").value;
+        let email=/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+        
+           var o=email.test(n);
+            if(o==true)
+        document.getElementById("hel").innerText=" valid email";
+        else
+        document.getElementById("hel").innerText="Invalid email";
+        }
+        //===================exec() finds the pattern in string with index.
+    //if " g" is not   used it always gives intial index.
+        var re=/batch/g;
+        res=re.exec("fullstacck batch-mernstack batch")
+        console.log(res.index)
+        console.log(res);
+        res=re.exec("fullstacck batch-mernstack batch")
+        console.log(res.index);
+        console.log(res);
+    </script>
+</body>
+</html>

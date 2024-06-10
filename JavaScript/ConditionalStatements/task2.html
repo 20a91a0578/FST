@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+       div{
+        float:left;
+        border:1px solid blue;
+        width:100%;
+       }
+        span{
+            margin:auto;
+            margin-top: 10px;
+            margin-left: 3px;
+        margin-right:10px;  
+font-size:25px;      }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<body id="bod">
+<div class="col-md-4" id="d2" style="border:1px solid green ;width:auto">
+
+</div>
+    <script>
+         let traines=[
+            {
+                "id":1234,
+                "name":"prasad",
+                "college":"Aec",
+                "branch":"CSE"
+            },
+            {
+                "id":1235,
+                "name":"rajesh",
+                "college":"Aec",
+                "branch":"EEE"
+            },
+            {
+                "id":1238,
+                "name":"satya",
+                "college":"Aec",
+                "branch":"ECE"
+            }
+        ]
+        let x=document.getElementById("d2");
+        for(i=0;i<traines.length;i++)
+        {
+        var y = document.createElement("div");
+        var z1 = document.createElement("span");
+        var z2=document.createElement("span");
+        var z3=document.createElement("span");
+        var z4=document.createElement("span");
+  z1.innerText =traines[i].id;
+  z2.innerText =traines[i].name;
+  z3.innerText =traines[i].college;
+  z4.innerText =traines[i].branch;
+  y.appendChild(z1);
+  y.appendChild(z2);
+  y.appendChild(z3);
+  y.appendChild(z4);
+  x.appendChild(y);
+
+        }
+  
+        
+    </script>
+</body>
+</html>

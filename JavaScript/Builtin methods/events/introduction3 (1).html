@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Handler</title>
+</head>
+<body>
+<button id="btn_id">Click here</button>
+<!-- 3rd way  -->
+<script type="text/javascript">
+	// function sample(){
+	// 	document.body.style.background='red';
+	// }
+	let btn = document.getElementById('btn_id');
+	//btn.addEventListener(eventname,functionname or anonymousfunction);
+	//btn.addEventListener('click',sample);
+	btn.addEventListener('click',function(){
+		document.body.style.background='green';
+	});
+	
+	
+</script>
+</body>
+</html>

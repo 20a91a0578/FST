@@ -1,0 +1,462 @@
+body{
+   background-color: aqua;
+}
+
+#pbody{
+    height:700px;
+    width:100%;
+    border:1px solid blue;
+    box-shadow:3px 3px 2px 4px #003860;
+}
+#www
+{
+    text-decoration: underline;
+    text-shadow:4px 4px 5px #003860;
+    text-align: center;
+    margin-left:110px;
+}
+#sign1
+{
+    border:1px solid blue;
+    border-radius:15px;
+   margin:auto;
+    box-shadow:4px 4px 5px 5px #003860;
+    padding:10px;
+    width:80%;
+    height:auto;
+
+}
+#sign2
+{
+    border:1px solid blue;
+    border-radius:15px;
+    box-shadow:4px 4px 4px 5px #003860;
+    width:60%;
+   margin: auto;
+}
+#sign
+{
+    border:1px solid blue;
+    border-radius:15px;
+    box-shadow:4px 4px 4px 5px #003860;
+    width:70%;
+    margin-left:225px;
+}
+#marvel
+{
+    color:black;
+    text-decoration: underline;
+   font-size: 20px;
+    text-align: center;
+    text-shadow:2px 3px 4px  lightsalmon;
+
+}
+#pimg
+{
+    display: inline;
+    border:1px solid antiquewhite;
+    width:450px;
+    height:680px;
+    float:left;
+}
+#pgallery
+{
+   
+    height: 400px;
+    width: 100%;
+    margin: auto;
+    border: 1px solid #003860;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px 5px #003860;
+    padding-top: 30px;
+
+}
+.pgalleryrow .gal{
+    height:auto;
+    margin-left:50px;
+    margin-right:-25px;
+    width:15%;
+    float:left;
+    margin-bottom: 45px;
+    
+   
+}
+.pgalleryrow .gal a img{
+    width:150px;
+    height: 100px;
+    border-radius: 10px;
+}
+.pgalleryrow .gal .imgname
+{
+    
+    width: 20%;
+    height:10%;
+  
+}
+.gallerrow .gal .imgname p{
+   color:white;
+}
+#header
+{
+    border:1px solid black;
+    width:100%;
+    height:80px;
+    background:black;
+    box-shadow:6px 0px 3px 3px black;
+    
+}
+#main
+{
+    height:auto;width:100%;border:1px solid blue";
+}
+#off
+{
+    color:white;
+    width:50%;
+    display:inline;
+}
+#header h1{
+    color: white;
+    text-align: center;
+    display:inline;
+
+}
+#nav
+{
+    float:right;
+}
+#nav span{
+    border:2px solid white;
+    border-radius:5px;
+    padding-right:4px;
+    margin-right:3px;
+    background-color:white;
+
+}
+#nav span a{
+    text-decoration: none;
+}
+.imgname a
+{
+    text-decoration: none;
+}
+#about
+{
+    color:#003860;
+    text-decoration: underline;
+   font-size: 20px;
+    text-align: center;
+    text-shadow:2px 3px 4px #003860;
+}
+#ceo
+{
+    margin-left:320px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#captcha
+{
+    margin-left:56px;
+}
+#help
+{
+    width:100%;
+    height:auto;
+    text-align: justify;
+    word-spacing: 3px;
+    text-indent:50px;
+    
+}
+#sign
+{
+    text-align: center;
+}
+#sign2
+{
+    text-align: center;
+}
+#form
+{
+  align-items: center;
+    padding-top:20px;
+    margin-left:80px;
+}
+#ema{margin-left:76px;}
+#usr{margin-right:-40px;}
+#pass{margin-right:-40px;}
+#gen{margin-left:50px;}
+#la{margin-left:-2px;}
+#up{margin-left:95px;}
+#col{margin-left:40px;}
+#br{margin-left:55px;}
+#age{margin-left:-10px}
+#dob{margin-left:40px;}
+#content
+{
+    width:70%;
+    height:auto;
+    margin:auto;
+    border:1px solid blue;
+    text-indent:100px;
+    text-align:justify;
+    word-spacing:5px;
+    border-radius: 25px;
+    padding-left:25px;
+    padding-right: 25px;
+    box-shadow:10px 10px 10px 5px #003860;
+}
+#jk{
+    margin-top:25px;
+    width:150px;
+    height:150px;
+    margin-left:350px;
+}
+#st
+{
+    width:350px;
+    height:200px;
+    margin-left:350px;
+}
+#gallery
+{
+   
+    height: 1550px;
+    width: 100%;
+    margin: auto;
+    border: 1px solid #003860;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px 5px #003860;
+    padding: 30px;
+
+}
+.galleryrow .gal{
+    height: 350px;
+    margin-left: 30px;
+    width:22%;
+    float:left;
+    margin-bottom: 45px;
+    
+   
+}
+.galleryrow1 .gal{
+    height: 350px;
+    margin-left: 30px;
+    width:31%;
+    float:left;
+    margin-bottom: 45px;
+   
+}
+.galleryrow .gal img{
+    width:250px;
+    height: 250px;
+    border-radius: 20px;
+}
+.galleryrow1 .gal img{
+    width:250px;
+    height: 250px;
+    border-radius: 20px;
+}
+.galleryrow .gal .imgname
+{
+    background-color: #003860;
+    width: 50%;
+    height:10%;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 10px;
+    opacity:8;
+    text-align: center;
+    margin-left: 55px;
+}
+.galleryrow1 .gal .imgname
+{
+    background-color: #003860;
+    width: 50%;
+    height:10%;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 10px;
+    opacity:8;
+    text-align: center;
+    margin-left: 15px;
+}
+.galleryrow .gal .imgname p
+{
+    padding-top: 7px;
+    color:white;
+}
+.galleryrow1 .gal .imgname p
+{
+    padding-top: 7px;
+    color:white;
+}
+.galleryrow .gal img:hover{
+    box-shadow:3px 3px 8px 5px black;
+    border-radius:2px;
+    transition: all 1s;
+}
+.galleryrow1 .gal img:hover{
+    box-shadow:3px 3px 8px 5px black;
+    border-radius:2px;
+    transition: all 1s;
+}
+@media screen and (min-width:100px) and (max-width:400px) {
+
+    .galleryrow .gal{
+        width:100%;
+        float:none;
+        margin-left:0px;
+    }
+    .galleryrow1 .gal{
+        width:100%;
+        float:none;
+        margin-left:0px;
+    }
+    #gallery
+    {
+        height:5500px;
+    }
+    .galleryrow .gal .imgname
+{
+    background-color: #003860;
+    width: 100%;
+    height:10%;
+    margin-left: 0px;
+}
+.galleryrow1 .gal .imgname
+{
+    background-color: #003860;
+    width: 100%;
+    height:10%;
+    margin-left: 0px;
+}
+}
+@media screen and (min-width:401px) and (max-width:600px) {
+
+    .galleryrow .gal{
+        width:50%;
+        float:left;
+        margin-left: 0px;
+    }
+    .galleryrow1 .gal{
+        width:60%;
+        float:left;
+        margin-left: 0px;
+    }
+    #gallery
+    {
+        height:5500px;
+    }
+    .galleryrow .gal img{
+        width:150px;
+        height: 150px;
+        border-radius: 20px;
+        padding:8px;
+    }
+    .galleryrow1 .gal img{
+        width:200px;
+        height: 200px;
+        border-radius: 20px;
+        padding: 8px;
+    }
+    .galleryrow .gal .imgname
+    {
+        background-color: #003860;
+        width: 50%;
+        height:10%;
+        margin-left: 0px;
+    }
+    .galleryrow1 .gal .imgname
+    {
+        background-color: #003860;
+        width: 50%;
+        height:10%;
+        margin-left: 0px;
+    }
+}
+@media screen and (min-width:601px) and (max-width:800px) {
+
+    .galleryrow .gal{
+        width:25%;
+        float:left;
+        margin-left: 0px;
+    }
+    .galleryrow1 .gal{
+        width:45%;
+        float:left;
+        margin-left: 0px;
+    }
+    #gallery
+    {
+        height:1900px;
+    }
+    .galleryrow .gal img{
+        width:150px;
+        height: 150px;
+        border-radius: 20px;
+        padding:8px;
+    }
+    .galleryrow1 .gal img{
+        width:200px;
+        height: 200px;
+        border-radius: 20px;
+        padding: 8px;
+    }
+    .galleryrow .gal .imgname
+    {
+        background-color: #003860;
+        width: 30%;
+        height:10%;
+        margin-left: 0px;
+    }
+    .galleryrow1 .gal .imgname
+    {
+        background-color: #003860;
+        width: 40%;
+        height:10%;
+        margin-left: 0px;
+    }
+}
+@media screen and (min-width:801px) and (max-width:900px){
+
+    .galleryrow .gal{
+        width:25%;
+        float:left;
+        margin-left: 0px;
+    }
+    .galleryrow1 .gal{
+        width:45%;
+        float:left;
+        margin-left: 0px;
+    }
+    #gallery
+    {
+        height:1900px;
+    }
+    .galleryrow .gal img{
+        width:150px;
+        height: 150px;
+        border-radius: 20px;
+        padding:8px;
+    }
+    .galleryrow1 .gal img{
+        width:200px;
+        height: 200px;
+        border-radius: 20px;
+        padding: 8px;
+    }
+    .galleryrow .gal .imgname
+    {
+        background-color: #003860;
+        width: 30%;
+        height:10%;
+        margin-left: 0px;
+    }
+    .galleryrow1 .gal .imgname
+    {
+        background-color: #003860;
+        width: 40%;
+        height:10%;
+        margin-left: 0px;
+    }
+}
